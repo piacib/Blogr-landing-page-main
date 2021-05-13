@@ -1,0 +1,39 @@
+:root {
+    /* fonts */
+    /* - Family: [Overpass] - Weights:  */
+    --overpass-font: 'Overpass', sans-serif;
+    --overpass-weight-small: 300;
+    --overpass-weight-medium: 600;
+    
+    /* - Family: [Ubuntu] - Weights:  */
+    --ubuntu-font: 'Ubuntu', sans-serif;
+    --ubuntu-weight-small:400;
+    --ubuntu-weight-medium:500; 
+    --ubuntu-weight-large:700;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap'); */
+/* @import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom'); */
+/* @import url('https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom'); */
+
+.overpass-font-small {
+    font-family: var(--overpass-font);
+    font-weight: var(--overpass-weight-small);
+    
+}
+.overpass-font-medium {
+    font-family: var(--overpass-font);
+    font-weight: var(--overpass-weight-medium);
+}
+.ubuntu-font-small {
+    font-family: var(--ubuntu-font);
+    font-weight: var(--ubuntu-weight-small);
+}
+.ubuntu-font-medium {
+    font-family: var(--ubuntu-font);
+    font-weight: var(--ubuntu-weight-large);
+}
+.ubuntu-font-large {
+    font-family: var(--ubuntu-font);
+    font-weight: var(--ubuntu-weight-large);
+}
