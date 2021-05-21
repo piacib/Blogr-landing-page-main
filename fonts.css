@@ -16,12 +16,12 @@
 /* @import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom'); */
 /* @import url('https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom'); */
 
-.overpass-font-small {
+.overpass-font-small, p {
     font-family: var(--overpass-font);
     font-weight: var(--overpass-weight-small);
     
 }
-.overpass-font-medium {
+.overpass-font-medium, h2 {
     font-family: var(--overpass-font);
     font-weight: var(--overpass-weight-medium);
 }

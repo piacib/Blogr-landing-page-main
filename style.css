@@ -29,10 +29,9 @@
     flex-direction: column;
     align-items:center;
 }
-.flex-row-centered-horizontal {
+.flex-row {
     display:flex;
     flex-direction: row;
-    align-items:center;
 }
 /*  */
 html {
@@ -40,7 +39,7 @@ html {
 }
 body {
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.75;
 }
 header {
     position:relative;
@@ -136,6 +135,8 @@ h1 {
 
 .container1 {
     padding-top: 3em;
+    width:100%;
+    
     background-color: white;
     color: var(--body-text-color);
     position:relative;
@@ -152,6 +153,7 @@ padding-bottom: 10em;
 }
 h2 {
     font-size:2.7rem;
+    margin:0;
 }
 .container1 h2 {
     /* grid-row-start: row1-start ; */
@@ -164,7 +166,7 @@ h3 {
     font-size:1.7rem;
 }
 p {
-    font-size: 1rem;
+    font-size: 1.0rem;
 }
 .container1 p {
     padding: 0;
@@ -202,7 +204,7 @@ p {
 }
 /* container1 blocks the overflow  */
 .container2 {
-    border-radius: 0 10em;
+    border-radius: 0 7em;
     height: 25em;
     width:100%;
     position: relative;
@@ -237,34 +239,64 @@ p {
     z-index:1;
     position: absolute;
     /* height: 50em; */
-    top:-3em;
+    top:-4em;
     left: 5em;
 }
 .container3 {
     background-color: white;
     width: 100%;
-    border: 1px solid green;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
     position: relative;
-    padding:10em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    padding: 17em 0;
 }
 .container3-content {
     display: flex;
     flex-direction: column;
-    /* min-width: 45ch; */
-    border: 1px solid green;
-    width: 50%;
+    min-width: 45ch;
+    /* border: 1px solid green; */
+    /* max-width: 40%; */
+    width: 100%;
+    padding-left: 50%;
+margin-right: 7em ;
 }
-footer, .svg {
+#illustration-laptop-desktop {
+    position: absolute;
+    left:-17.3em;
+    top:8em;
+    /* border: 1px solid black;  */
+}
+.svg {
     display: none;
 }
 footer {
     width:100%;
     background-color: var(--footer-background);
-    min-height: 20em;
+    height: 23em;
     border-radius: 0 5em 0 0;
-    color: var(--footer-text-color)
+    color: var(--footer-text-color);
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     
+    
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border:3px solid white;
+    margin: 4em 0em 4em 6em;
+    width: 80%;
+    padding-right: 8em;
+}
+.footer-content img {
+    justify-self: center;
+    
+}
+.footer-content ul {
+    display: flex;
+    flex-direction: column;
+}
+.footer-content ul li:first-of-type {
+    font-weight: bold;
 }
