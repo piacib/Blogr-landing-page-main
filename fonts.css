@@ -1,4 +1,8 @@
+
 :root {
+    /* header font color */
+    --headings: hsl(208, 49%, 24%);
+
     /* fonts */
     /* - Family: [Overpass] - Weights:  */
     --overpass-font: 'Overpass', sans-serif;
@@ -16,13 +20,13 @@
 /* @import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom'); */
 /* @import url('https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom'); */
 
-.overpass-font-small, p {
+.overpass-font-small, p, .footer-list li {
     font-family: var(--overpass-font);
     font-weight: var(--overpass-weight-small);
     
 }
 
-.overpass-font-medium, h2, h3 {
+.overpass-font-medium, h2, h3, .footer-list li:first-of-type {
     font-family: var(--overpass-font);
     font-weight: var(--overpass-weight-medium);
 }
@@ -30,7 +34,7 @@
     font-family: var(--ubuntu-font);
     font-weight: var(--ubuntu-weight-small);
 }
-.ubuntu-font-medium {
+.ubuntu-font-medium  {
     font-family: var(--ubuntu-font);
     font-weight: var(--ubuntu-weight-large);
 }
@@ -41,7 +45,9 @@
 .white-text {
     color: var(--text-color);
 }
-
+h2, h3 {
+    color: var(--headings);
+}
 h1 {
     font-size:3.8rem;
 }
@@ -59,8 +65,7 @@ p {
     font-size: 1.0rem;
     line-height: 1.75;
     width: 100%;
-    max-width: 56ch;
-    
+    max-width: 56ch;   
 }
 .container1 p:first-of-type {
     margin-bottom: 3em;

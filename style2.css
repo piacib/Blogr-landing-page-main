@@ -1,7 +1,7 @@
 
-.dropdown {
+/* .dropdown {
     display: none;
-}
+} */
 /* general classes */
 .flex-column-centered-vertically {
     display:flex;
@@ -69,6 +69,19 @@ ul {
 .tab {
     cursor: pointer;
 }
+.product-dropdown-content {
+    display: none;
+}
+.company-dropdown-content {
+    display: none;
+}
+.connect-dropdown-content {
+    display: none;
+}
+
+
+
+
 .button {
     padding:.75rem 1rem;
     margin:0 .5rem;
