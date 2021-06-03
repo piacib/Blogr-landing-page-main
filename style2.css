@@ -37,10 +37,7 @@ header {
     height: 200em;
     z-index: -1;
 }
-.navbar {
-    margin: 1.5em 15em;
-    width: 80%;
-}
+
 ul {
     font-size: 1.2rem;
     display:flex;
@@ -69,15 +66,7 @@ ul {
 .tab {
     cursor: pointer;
 }
-.product-dropdown-content {
-    display: none;
-}
-.company-dropdown-content {
-    display: none;
-}
-.connect-dropdown-content {
-    display: none;
-}
+
 
 
 
